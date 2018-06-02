@@ -1,29 +1,27 @@
 <html>
 <head>
-<title>jQuery Effects - Sliding</title>
-<script src="jquery.min.js"></script>
+<title>jQuery Effects - Fading</title>
+<script src="js/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-$("#flip").click(function(){
-$("#panel").slideToggle("slow");
+$("button").click(function(){
+$("#div1").fadeToggle();
+$("#div2").fadeToggle("slow");
+$("#div3").fadeToggle(3000);
 });
 });
 </script>
-<style>
-#panel, #flip {
-padding: 5px;
-text-align: center;
-background-color: #e5eecc;
-border: solid 1px #c3c3c3;
-}
-#panel {
-padding: 50px;
-display: none;
-}
-</style>
 </head>
 <body>
-<div id="flip">Click to slide the panel down or up</div>
-<div id="panel">Hello Adrian!</div>
+<p>fadeToggle().</p>
+<button>fade in/out boxes</button><br><br>
+<div id="div1" style="width:80px;height:80px;backgroundcolor:
+red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;backgroundcolor:
+green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;backgroundcolor:
+blue;"></div>
 </body>
 </html>
